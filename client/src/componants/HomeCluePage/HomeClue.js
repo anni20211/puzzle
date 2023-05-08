@@ -6,7 +6,7 @@ const HomeClue=()=> {
   const [userInput, setUserInput] = useState('');
   const [score,setScore]=useState(1);
   // puzzle answers for each level
-  const answers = ['answer1', 'answer2', 'answer3','ankit','ankit kumar'];
+  const answers = ['answer9', 'answer2', 'answer3','ankit','ankit kumar'];
   
   // function to check user input against puzzle answer
   const checkAnswer = (input) => {
