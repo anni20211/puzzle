@@ -1,0 +1,16 @@
+.logout-button {
+    background-color: #35b5dc; /* red background */
+    color: #fff; /* white text */
+    border: none; /* remove border */
+    padding: 0.5rem 1rem; /* add some padding */
+    border-radius: 0.25rem; /* add rounded corners */
+    cursor: pointer; /* change cursor on hover */
+    font-size: 1rem; /* set font size */
+    font-weight: 600; /* set font weight */
+    text-align: center; /* center text */
+  }
+  
+  .logout-button:hover {
+    background-color: #238ec8; /* darker red on hover */
+  }
+  
