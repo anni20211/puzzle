@@ -40,69 +40,82 @@ const HomeClue=()=> {
   let gameContent;
   if (level === 1) {
     gameContent = (
-      <>
-        <h2>Level 1</h2>
+      <div>
+      <h2>Level 1</h2>
         <p>Clue: What is the capital of France?</p>
         <form onSubmit={handleSubmit}>
           <input type="text" value={userInput} onChange={handleInput} />
           <button type="submit">Submit</button>
         </form>
-      </>
+      </div>
+        
+      
     );
   } else if (level === 2) {
     gameContent = (
-      <>
-        <h2>Level 2</h2>
+      <div>
+       <h2>Level 2</h2>
         <p>Clue: What is the largest planet in our solar system?</p>
         <form onSubmit={handleSubmit}>
           <input type="text" value={userInput} onChange={handleInput} />
           <button type="submit">Submit</button>
         </form>
-      </>
+      </div>
+       
+      
     );
   } else if (level === 3) {
     gameContent = (
-      <>
+      <div>
         <h2>Level 3</h2>
         <p>Clue: What is the tallest mountain in the world?</p>
         <form onSubmit={handleSubmit}>
           <input type="text" value={userInput} onChange={handleInput} />
           <button type="submit">Submit</button>
         </form>
-      </>
+      </div>
+       
+      
     );
   }
   else if (level === 4) {
     gameContent = (
-      <>
-        <h2>Level 3</h2>
+      <div>
+      <h2>Level 3</h2>
         <p>Clue: Who are you?</p>
         <form onSubmit={handleSubmit}>
           <input type="text" value={userInput} onChange={handleInput} />
           <button type="submit">Submit</button>
         </form>
-      </>
+      </div>
+        
+      
     );
   }else if (level === 5) {
     gameContent = (
-      <>
+      <div>
+
         <h2>Level 3</h2>
         <p>Clue: What is the name of developer?</p>
         <form onSubmit={handleSubmit}>
           <input type="text" value={userInput} onChange={handleInput} />
           <button type="submit">Submit</button>
         </form>
-      </>
+      </div>
+        
+      
     );
   } else {
     gameContent = (
-      <>
-       <Final score={score}/>
-      </>
+      <div>
+    <Final score={score}/>
+      </div>
+      
+      
     );
   }
   return (
-    <div>
+    <div className='container '>
       {gameContent}
     </div>
   );
